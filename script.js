@@ -101,11 +101,33 @@ console.log(h);
 
 // 
 
-console.log('--------12');
+// console.log('--------12');
+// let s = 0;
+// function countNumber(number) {
+//    for (let i = 1; i <= number; i++) {
+//        console.log(s += i);
+//    }  
+// }
+// countNumber(3)
+
+
+//
+
+console.log('--------12 второй вариант');
 let s = 0;
+let err = 'Введите целое положительное число';
 function countNumber(number) {
-   for (let i = 1; i <= number; i++) {
-       s = s + i;
-   }  
+    if (number < 0) {
+        console.log(err);
+    } else if (Number.isInteger (number)) {
+        for (let i = 1; i <= number; i++) {
+            console.log(s += i);
+        }
+    } else {
+        console.log(err);
+    }
 }
+countNumber(-5)
 countNumber(3)
+countNumber(2.7)
+
