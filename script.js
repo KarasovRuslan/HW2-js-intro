@@ -102,3 +102,10 @@ console.log(h);
 // 
 
 console.log('--------12');
+let s = 0;
+function countNumber(number) {
+   for (let i = 1; i <= number; i++) {
+       s = s + i;
+   }  
+}
+countNumber(3)
