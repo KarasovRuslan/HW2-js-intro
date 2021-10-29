@@ -121,8 +121,9 @@ function countNumber(number) {
         console.log(err);
     } else if (Number.isInteger (number)) {
         for (let i = 1; i <= number; i++) {
-            console.log(s += i);
+            s += i;
         }
+        console.log(s);
     } else {
         console.log(err);
     }
